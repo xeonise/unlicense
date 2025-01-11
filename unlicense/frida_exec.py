@@ -166,7 +166,11 @@ def spawn_and_instrument(
             rundll32_path,
             [rundll32_path, str(pe_path.absolute()), "#0"])
     else:
-        pid = frida.spawn(str(pe_path))
+        with open(r"C:\Users\xeonise\Desktop\arg1.txt", "r") as file:
+            args = file.read().split()
+        
+        pid = frida.spawn([str(pe_path)] + args)
+        
 
     main_module_name = pe_path.name
     session = frida.attach(pid)
