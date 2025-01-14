@@ -2,7 +2,7 @@
 
 [![GitHub release](https://img.shields.io/github/release/ergrelet/unlicense.svg)](https://github.com/ergrelet/unlicense/releases) [![Minimum Python version](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/) ![CI status](https://github.com/ergrelet/unlicense/actions/workflows/check.yml/badge.svg?branch=main)
 
-A Python 3 tool to dynamically unpack executables protected with
+A Python 3 tool to dynamically unpack executables protected with edited
 Themida/WinLicense 2.x and 3.x.
 
 Warning: This tool will execute the target executable. Make sure to use this
